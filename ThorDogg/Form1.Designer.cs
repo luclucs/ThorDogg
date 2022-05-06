@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnRacas = new System.Windows.Forms.Button();
-            this.btnFavoritos = new System.Windows.Forms.Button();
             this.labelBemvindo = new System.Windows.Forms.Label();
             this.picDog = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picDog)).BeginInit();
@@ -40,21 +39,11 @@
             // 
             this.btnRacas.Location = new System.Drawing.Point(12, 12);
             this.btnRacas.Name = "btnRacas";
-            this.btnRacas.Size = new System.Drawing.Size(122, 23);
+            this.btnRacas.Size = new System.Drawing.Size(328, 23);
             this.btnRacas.TabIndex = 0;
             this.btnRacas.Text = "Buscar Raças";
             this.btnRacas.UseVisualStyleBackColor = true;
             this.btnRacas.Click += new System.EventHandler(this.btnRacas_Click);
-            // 
-            // btnFavoritos
-            // 
-            this.btnFavoritos.Location = new System.Drawing.Point(218, 12);
-            this.btnFavoritos.Name = "btnFavoritos";
-            this.btnFavoritos.Size = new System.Drawing.Size(122, 23);
-            this.btnFavoritos.TabIndex = 1;
-            this.btnFavoritos.Text = "Meus Favoritos";
-            this.btnFavoritos.UseVisualStyleBackColor = true;
-            this.btnFavoritos.Click += new System.EventHandler(this.btnFavoritos_Click);
             // 
             // labelBemvindo
             // 
@@ -83,7 +72,6 @@
             this.ClientSize = new System.Drawing.Size(352, 329);
             this.Controls.Add(this.picDog);
             this.Controls.Add(this.labelBemvindo);
-            this.Controls.Add(this.btnFavoritos);
             this.Controls.Add(this.btnRacas);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -99,7 +87,6 @@
         #endregion
 
         private Button btnRacas;
-        private Button btnFavoritos;
         private Label labelBemvindo;
         private PictureBox picDog;
     }

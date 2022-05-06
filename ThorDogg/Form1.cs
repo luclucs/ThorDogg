@@ -13,12 +13,5 @@ namespace ThorDogg
             buscarRaca.Show();
             this.Hide();
         }
-
-        private void btnFavoritos_Click(object sender, EventArgs e)
-        {
-            Favoritos favoritos = new Favoritos();
-            favoritos.Show();
-            this.Hide();
-        }
     }
 }

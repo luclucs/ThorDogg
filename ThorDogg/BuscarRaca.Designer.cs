@@ -40,7 +40,6 @@
             this.labelResVida = new System.Windows.Forms.Label();
             this.labelResDescricao = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.btnFavoritar = new System.Windows.Forms.Button();
             this.pictureDogg = new System.Windows.Forms.PictureBox();
             this.labelRacaNome = new System.Windows.Forms.Label();
             this.btnSurprise = new System.Windows.Forms.Button();
@@ -155,16 +154,6 @@
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // btnFavoritar
-            // 
-            this.btnFavoritar.Location = new System.Drawing.Point(268, 294);
-            this.btnFavoritar.Name = "btnFavoritar";
-            this.btnFavoritar.Size = new System.Drawing.Size(122, 23);
-            this.btnFavoritar.TabIndex = 12;
-            this.btnFavoritar.Text = "Favoritar";
-            this.btnFavoritar.UseVisualStyleBackColor = true;
-            this.btnFavoritar.Click += new System.EventHandler(this.btnFavoritar_Click);
-            // 
             // pictureDogg
             // 
             this.pictureDogg.Location = new System.Drawing.Point(458, 9);
@@ -183,12 +172,13 @@
             this.labelRacaNome.Size = new System.Drawing.Size(59, 15);
             this.labelRacaNome.TabIndex = 14;
             this.labelRacaNome.Text = "Resultado";
+            this.labelRacaNome.Click += new System.EventHandler(this.labelRacaNome_Click);
             // 
             // btnSurprise
             // 
-            this.btnSurprise.Location = new System.Drawing.Point(396, 294);
+            this.btnSurprise.Location = new System.Drawing.Point(268, 294);
             this.btnSurprise.Name = "btnSurprise";
-            this.btnSurprise.Size = new System.Drawing.Size(56, 23);
+            this.btnSurprise.Size = new System.Drawing.Size(122, 23);
             this.btnSurprise.TabIndex = 15;
             this.btnSurprise.Text = "?";
             this.btnSurprise.UseVisualStyleBackColor = true;
@@ -202,7 +192,6 @@
             this.Controls.Add(this.btnSurprise);
             this.Controls.Add(this.labelRacaNome);
             this.Controls.Add(this.pictureDogg);
-            this.Controls.Add(this.btnFavoritar);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.labelResDescricao);
             this.Controls.Add(this.labelResVida);
@@ -239,7 +228,6 @@
         private Label labelResVida;
         private Label labelResDescricao;
         private Button btnBuscar;
-        private Button btnFavoritar;
         private PictureBox pictureDogg;
         private Label labelRacaNome;
         private Button btnSurprise;
